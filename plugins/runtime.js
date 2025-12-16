@@ -15,18 +15,17 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Generate system status message
         const status = `╭━━〔 *AWAIS-MD* 〕━━┈⊷
 ┃◈╭─────────────·๏
-┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *⚙️ HostName*: ${os.hostname()}
-┃◈┃• *👨‍💻 Owner*: AWAISXD 
-┃◈┃• *🧬 Version*: 3.0.0 BETA
+┃◈┃• _*⏳UPTIME*_:  ${runtime(process.uptime())} 
+┃◈┃• _*🔋RAM USAGE*_: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
+┃◈┃• _*👨‍💻OWNER*_: AWAISXD 
+┃◈┃• _*🧬 VERSION*_: 5.0.0 META
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴡᴀɪs ᴍᴅ`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg` },  // Image URL
+            image: { url: `https://files.catbox.moe/3n3p2p.jpg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
