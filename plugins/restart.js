@@ -3,6 +3,7 @@ const { sleep } = require('../lib/functions');
 
 cmd({
     pattern: "restart",
+    alias: ["upgrade", "update"], 
     desc: "Restart the bot",
     category: "owner",
     filename: __filename
@@ -18,7 +19,7 @@ async (conn, mek, m, {
         }
 
         const { exec } = require("child_process");
-        reply("Restarting...");
+        reply("AWAIS-MD-V5 IS UPDATING PLEASE WAIT ⚡");
         await sleep(1500);
         exec("pm2 restart all");
     } catch (e) {
