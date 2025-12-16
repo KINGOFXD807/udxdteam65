@@ -3,7 +3,7 @@ const { sleep } = require('../lib/functions');
 
 cmd({
     pattern: "restart",
-    alias: ["upgrade", "update"], 
+    alias: ["upgrade","update"], 
     desc: "Restart the bot",
     category: "owner",
     filename: __filename
