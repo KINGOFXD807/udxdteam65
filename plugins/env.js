@@ -19,27 +19,27 @@ cmd({
 async (conn, mek, m, { from, quoted, reply }) => {
     try {
         // Define the settings message with the correct boolean checks
-        let envSettings = `╭━━━〔 *AWAIS-MD* 〕━━━┈⊷
+        let envSettings = `╭━━━〔 _*AWAIS-MD*_ 〕━━━┈⊷
 ┃▸╭───────────
-┃▸┃๏ *ENV SETTINGS 🗿*
+┃▸┃๏ _*ENV SETTINGS*_
 ┃▸└───────────···๏
 ╰────────────────┈⊷
-╭━━〔 *Enabled Disabled* 〕━━┈⊷
-┇๏ *Auto Read Status:* ${isEnabled(config.AUTO_READ_STATUS) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Status Reply:* ${isEnabled(config.AUTO_STATUS_REPLY) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Reply:* ${isEnabled(config.AUTO_REPLY) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Sticker:* ${isEnabled(config.AUTO_STICKER) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Voice:* ${isEnabled(config.AUTO_VOICE) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Owner React:* ${isEnabled(config.OWNER_REACT) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Heart React:* ${isEnabled(config.HEART_REACT) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto React:* ${isEnabled(config.AUTO_REACT) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Anti-Link:* ${isEnabled(config.ANTI_LINK) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Anti-Bad Words:* ${isEnabled(config.ANTI_BAD) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Typing:* ${isEnabled(config.AUTO_TYPING) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Auto Recording:* ${isEnabled(config.FAKE_RECORDING) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Always Online:* ${isEnabled(config.ALWAYS_ONLINE) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Currently Status:* ${isEnabled(config.CURRENT_STATUS) ? "Enabled ✅" : "Disabled ❌"}
-┇๏ *Read Message:* ${isEnabled(config.READ_MESSAGE) ? "Enabled ✅" : "Disabled ❌"}
+╭━━〔 _*ON / OFF*_ 〕━━┈⊷
+┇๏ _*.autostatusview:*_ ${isEnabled(config.AUTO_READ_STATUS) ? "on ✅" : "off ❌"}
+┇๏ _*.status-reply:*_ ${isEnabled(config.AUTO_STATUS_REPLY) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-reply:*_ ${isEnabled(config.AUTO_REPLY) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-sticker:*_ ${isEnabled(config.AUTO_STICKER) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-voice:*_ ${isEnabled(config.AUTO_VOICE) ? "on ✅" : "off ❌"}
+┇๏ _*.owner-react:*_ ${isEnabled(config.OWNER_REACT) ? "on ✅" : "off ❌"}
+┇๏ _*.heart-react:*_ ${isEnabled(config.HEART_REACT) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-react:*_ ${isEnabled(config.AUTO_REACT) ? "on ✅" : "off ❌"}
+┇๏ _*.anti-link:*_ ${isEnabled(config.ANTI_LINK) ? "on ✅" : "off ❌"}
+┇๏ _*.anti-bad:*_ ${isEnabled(config.ANTI_BAD) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-typing:*_ ${isEnabled(config.AUTO_TYPING) ? "on ✅" : "off ❌"}
+┇๏ _*.auto-recording:*_ ${isEnabled(config.FAKE_RECORDING) ? "on ✅" : "off ❌"}
+┇๏ _*.always-online:*_ ${isEnabled(config.ALWAYS_ONLINE) ? "on ✅" : "off ❌"}
+┇๏ _*.current-status:*_ ${isEnabled(config.CURRENT_STATUS) ? "on ✅" : "off ❌"}
+┇๏ _*.read-message:*_ ${isEnabled(config.READ_MESSAGE) ? "on ✅" : "off ❌"}
 ╰━━━━━━━━━━━━──┈⊷
 > ${config.CAPTION}`;
 
