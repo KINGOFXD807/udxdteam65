@@ -22,9 +22,9 @@ let about = `
 *┃★│* *ᴄʀᴇᴀᴛᴇʀ : ᴀᴡᴀɪs*
 *┃★│* *ʀᴇᴀʟ ɴᴀᴍᴇ : ᴍ ᴀᴡᴀɪs*
 *┃★│* *ᴘᴜʙʟɪᴄ ɴᴀᴍᴇ : ᴀᴡᴀɪs xᴅ*
-*┃★│* *ᴀɢᴇ : 18 ʏᴇᴀʀ*
+*┃★│* *ᴀɢᴇ : 19 ʏᴇᴀʀ*
 *┃★│* *ᴄɪᴛʏ : ᴘᴇʀsɴᴏʟ ʜᴀɪ*
-*┃★│* *ᴀ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ ᴅᴇᴠᴇʟᴘᴏʀ*
+*┃★│* *ᴀ sɪᴍᴘʟᴇ ᴡʜᴀᴛsᴀᴘᴘ BOT ᴅᴇᴠᴇʟᴘᴏʀ*
 *┃★╰──────────────*
 *╰━━━━━━━━━━━━━━━┈⊷*
 > *◆◆◆◆◆◆◆◆◆◆◆◆*
@@ -45,7 +45,7 @@ let about = `
 *•────────────•⟢*
 `
 
-await conn.sendMessage(from,{image:{url:`https://github.com/Awais-star-a11y/TESTING-REPO/raw/refs/heads/main/IMG-20250409-WA0093.jpg`},caption:about,
+await conn.sendMessage(from,{image:{url:`https://files.catbox.moe/vg0lec.jpg`},caption:about,
                              contextInfo: {
     mentionedJid: [m.sender],
     forwardingScore: 999,
