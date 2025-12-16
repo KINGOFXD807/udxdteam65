@@ -117,7 +117,7 @@ await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu,
         url: 'https://files.catbox.moe/f5y622.mp4'
       },
       mimetype: 'audio/mpeg',
-      ptt: true,
+      ptt: false,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
