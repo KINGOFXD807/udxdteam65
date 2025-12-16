@@ -27,7 +27,7 @@ async (conn, mek, m, { from, reply }) => {
         const repoData = await response.json();
 
         // Format the repository information
-        const formattedInfo = `_*BOT NAME📛:*_\n> ${repoData.name}\n\n_*OWNER NAME👑:*_\n> ${repoData.owner.login}\n\n_*STARS✨:*_\n> ${repoData.stargazers_count}\n\n_*FORKS🔌:*_\n> ${repoData.forks_count}\n\n*_GITHUB LINK🖇️:*_\n> ${repoData.html_url}\n\n*DESCRIPTION:*\n> ${repoData.description || '_*SIMPLE AND STABLE BOT FOR WHATSAPP🖤🔥*_'}\n\n_*DON'T FORGET STAR AND FORK ✨*_\n\n> *ᴀᴡᴀɪs ᴍᴅ 🖤🔥*`;
+        const formattedInfo = `_*BOT NAME 📛:*_\n> ${repoData.name}\n\n_*OWNER NAME 👑:*_\n> ${repoData.owner.login}\n\n_*STARS ✨:*_\n> ${repoData.stargazers_count}\n\n_*FORKS 🔌:*_\n> ${repoData.forks_count}\n\n_*GITHUB LINK 🖇️:*_\n> ${repoData.html_url}\n\n_*DESCRIPTION:*_\n> ${repoData.description || '_*SIMPLE AND STABLE BOT FOR WHATSAPP 🖤🔥*_'}\n\n_*DON'T FORGET STAR AND FORK ✨*_\n\n> *ᴀᴡᴀɪs ᴍᴅ 🖤🔥*`;
 
         // Send an image with the formatted info as a caption and context info
         await conn.sendMessage(from, {
